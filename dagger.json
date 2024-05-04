@@ -1,0 +1,6 @@
+{
+  "name": "w.eird.name.repro",
+  "sdk": "go",
+  "source": "dagger",
+  "engineVersion": "v0.11.2"
+}

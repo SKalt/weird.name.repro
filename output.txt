@@ -1,0 +1,213 @@
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+3: in dagger init --name=weird.name.repro
+3: Initialized module weird.name.repro in .
+
+✔ connect 0.5s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 0.1s
+
+Initialized module weird.name.repro in .                                                                                                                                                                                                                                                                    [0m
+
+Initialized module weird.name.repro in .
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name weird.name.repro --introspection-json-path /schema.json
+4: generating go module: weird.name.repro
+
+3: in starting session
+3: OK!
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name weird.name.repro --introspection-json-path /schema.json
+4: writing dagger.gen.go
+4: writing go.mod
+4: writing go.sum
+4: creating directory internal
+4: creating directory internal/dagger
+4: writing internal/dagger/dagger.gen.go
+4: creating directory internal/querybuilder
+4: writing internal/querybuilder/marshal.go
+4: writing internal/querybuilder/querybuilder.go
+4: creating directory internal/telemetry
+4: writing internal/telemetry/attrs.go
+4: writing internal/telemetry/batch_processor.go
+4: writing internal/telemetry/init.go
+4: writing internal/telemetry/processor.go
+4: writing internal/telemetry/proxy.go
+4: writing internal/telemetry/span.go
+4: writing main.go
+4: running post-command: go mod tidy
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name weird.name.repro --introspection-json-path /schema.json
+4: needs another pass...
+4: writing dagger.gen.go
+4: writing go.mod
+4: writing go.sum
+4: running post-command: go mod tidy
+4: done!
+
+✔ connect 0.4s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 0.7s
+  ✔ [internal] copy upload /workspaces/weird.name.repro from codespaces-207d49 (client id: ap7ai73802383h2dg1dpgm0zj) (exclude: **/.git) (include: dagger.json, ./**/*) 0.2s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 0.8s
+  ✔ [internal] copy upload /workspaces/weird.name.repro from codespaces-207d49 (client id: ap7ai73802383h2dg1dpgm0zj) (exclude: **/.git) (include: **/go.mod, **/go.sum, **/go.work, **/go.work.sum, **/vendor/, **/*.go, dagger.json, ./**/*) 0.2s
+✔ ModuleSource.asModule: Module! 2.7s
+✔ Directory.export(path: "/workspaces/weird.name.repro"): Boolean! 4.2s
+  ✔ export directory / to host /workspaces/weird.name.repro 4.2s
+    ✔ diff (blob://sha256:0a8e1d4174a97c38102be2ae64461556f0579f5cefa57280b095db64be36c86e) -> (exec /usr/local/bin/codegen --module-context /src --module-name weird.name.repro --introspection-json-path /schema.json) 0.3s
+    ✔ mkdir /dagger 0.2s
+    ✔ mkfile /dagger/.gitattributes 0.3s
+    ✔ mkdir /dagger 0.3s
+    ✔ mkfile /dagger/.gitignore 0.3s
+    ✔ mkdir / 0.3s
+    ✔ mkfile /dagger.json 0.3s
+    ✔ diff (blob://sha256:0a8e1d4174a97c38102be2ae64461556f0579f5cefa57280b095db64be36c86e) -> (mkfile /dagger.json) 0.7s
+
+
+
+# dagger v0.11.2 (registry.dagger.io/engine) linux/amd64
+# "weird.name.repro"
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+3: in starting session
+3: OK!
+
+4: in dagger functions
+4: [1mName[0m
+4:         
+4:      
+4: [1mDescription[0m
+4: container-echo
+4:    
+4: Returns a container that echoes whatever string argument is provided
+4: grep-dir
+4:         
+4:  
+4: Returns lines that match a pattern in the files of the provided Directory
+
+✔ connect 0.5s
+✔ initialize 1.8s
+
+[1mName[0m             [0m[1mDescription[0m                                                                                                                                                                                                                                                                                [0m
+[0mcontainer-echo   Returns a container that echoes whatever string argument is provided[0m                                                                                                                                                                                                                       [0m
+[0mgrep-dir         Returns lines that match a pattern in the files of the provided Directory[0m                                                                                                                                                                                                                  [0m
+
+[1mName[0m             [1mDescription[0m
+container-echo   Returns a container that echoes whatever string argument is provided
+grep-dir         Returns lines that match a pattern in the files of the provided Directory
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+3: in dagger init --name=w.eird.name.repro
+3: Initialized module w.eird.name.repro in .
+
+✔ connect 0.4s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 0.1s
+
+Initialized module w.eird.name.repro in .                                                                                                                                                                                                                                                                   [0m
+
+Initialized module w.eird.name.repro in .
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name w.eird.name.repro --introspection-json-path /schema.json
+4: generating go module: w.eird.name.repro
+
+3: in starting session
+3: OK!
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name w.eird.name.repro --introspection-json-path /schema.json
+4: writing dagger.gen.go
+4: writing go.mod
+4: writing go.sum
+4: creating directory internal
+4: creating directory internal/dagger
+4: writing internal/dagger/dagger.gen.go
+4: creating directory internal/querybuilder
+4: writing internal/querybuilder/marshal.go
+4: writing internal/querybuilder/querybuilder.go
+4: creating directory internal/telemetry
+4: writing internal/telemetry/attrs.go
+4: writing internal/telemetry/batch_processor.go
+4: writing internal/telemetry/init.go
+4: writing internal/telemetry/processor.go
+4: writing internal/telemetry/proxy.go
+4: writing internal/telemetry/span.go
+4: writing main.go
+4: running post-command: go mod tidy
+
+4: in exec /usr/local/bin/codegen --module-context /src --module-name w.eird.name.repro --introspection-json-path /schema.json
+4: needs another pass...
+4: writing dagger.gen.go
+4: writing go.mod
+4: writing go.sum
+4: running post-command: go mod tidy
+4: done!
+
+✔ connect 0.4s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 0.8s
+  ✔ [internal] copy upload /workspaces/weird.name.repro from codespaces-207d49 (client id: irjk6b1f8xn4lv1t3swtwxhpp) (exclude: **/.git) (include: dagger.json, ./**/*) 0.2s
+✔ ModuleSource.resolveFromCaller: ModuleSource! 1.8s
+  ✔ [internal] copy upload /workspaces/weird.name.repro from codespaces-207d49 (client id: irjk6b1f8xn4lv1t3swtwxhpp) (exclude: **/.git) (include: **/go.work.sum, **/vendor/, **/*.go, dagger.json, ./**/*, **/go.mod, **/go.sum, **/go.work) 0.8s
+✔ ModuleSource.asModule: Module! 2.6s
+✔ Directory.export(path: "/workspaces/weird.name.repro"): Boolean! 4.2s
+  ✔ export directory / to host /workspaces/weird.name.repro 4.2s
+    ✔ diff (blob://sha256:6d35ae85014fac042d26ada3c964c67ab4e4ce606d8fe2400300229b1ff60bb9) -> (exec /usr/local/bin/codegen --module-context /src --module-name w.eird.name.repro --introspection-json-path /schema.json) 0.3s
+    ✔ mkdir /dagger 0.2s
+    ✔ mkfile /dagger/.gitattributes 0.3s
+    ✔ mkdir /dagger 0.3s
+    ✔ mkfile /dagger/.gitignore 0.3s
+    ✔ mkdir / 0.3s
+    ✔ mkfile /dagger.json 0.3s
+    ✔ diff (blob://sha256:6d35ae85014fac042d26ada3c964c67ab4e4ce606d8fe2400300229b1ff60bb9) -> (mkfile /dagger.json) 0.7s
+
+
+
+# dagger v0.11.2 (registry.dagger.io/engine) linux/amd64
+# "w.eird.name.repro"
+1: in exec docker start dagger-engine-0555b88d2787fc27
+1: dagger-engine-0555b88d2787fc27
+
+Connected to engine 6cf72caa80eb (version v0.11.2)
+2: in starting session
+2: OK!
+
+3: in starting session
+3: OK!
+
+4: in dagger functions
+4: Error: main object not found
+
+✔ connect 0.5s
+✘ initialize 1.8s
+! main object not found
+  ✔ ModuleSource.resolveFromCaller: ModuleSource! 0.2s
+  ✔ ModuleSource.asModule: Module! 0.2s
+  ✔ Module.initialize: Module! 1.1s
+  ✔ ModuleSource.resolveFromCaller: ModuleSource! 0.2s
+
+Error: main object not found                                                                                                                                                                                                                                                                                [0m
+
+Error: main object not found
